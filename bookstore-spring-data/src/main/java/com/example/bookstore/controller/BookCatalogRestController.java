@@ -57,7 +57,7 @@ public class BookCatalogRestController {
 		return bookCatalogService.findAll(pageNo, pageSize);
 	}
 
-	@PostMapping
+	@PostMapping()
 	public BookResponse addBook(@RequestBody BookRequest book) {
 		return bookCatalogService.addBook(book);
 	}
